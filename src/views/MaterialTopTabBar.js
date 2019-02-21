@@ -88,7 +88,7 @@ export default class TabBarTop extends React.PureComponent<Props> {
       );
     }
     if (typeof label === 'function') {
-      return label({ focused, tintColor });
+      return label({ route, focused, tintColor, color });
     }
 
     return label;
